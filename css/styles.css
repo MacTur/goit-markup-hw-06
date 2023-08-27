@@ -22,6 +22,7 @@ body {
 
 button {
   border: none;
+  padding: 0;
 }
 
 ul,
@@ -254,9 +255,90 @@ header {
   transition: var(--transition);
 }
 
+.form-description {
+  display: block;
+  text-align: center;
+  padding-top: 72px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.32px;
+}
+
 .order-service-form {
   display: flex;
   flex-direction: column;
+  width: 360px;
+  gap: 8px;
+  margin: auto;
+  margin-top: 16px;
+  color: var(--brand-color8);
+  font-size: 12px;
+  line-height: 116.667%;
+  letter-spacing: 0.48px;
+  accent-color: var(--brand-color6);
+}
+
+.order-service-form input {
+  border: none;
+  width: 360px;
+  border-radius: 4px;
+  outline: transparent;
+}
+
+.form-input-wrapper {
+  display: flex;
+  position: relative;
+  row-gap: 8px;
+  width: 360px;
+  height: 40px;
+  border: solid 1px;
+  border-radius: 4px;
+  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+  margin-top: 4px;
+}
+
+.form-input-wrapper:focus,
+.form-text-area:focus {
+  fill: var(--brand-color2);
+  border-color: var(--brand-color2);
+}
+
+.form-input-wrapper input {
+  padding-left: 38px;
+}
+
+.form-input-svg {
+  position: absolute;
+  fill: black;
+  height: 24px;
+  width: 18px;
+  top: 8px;
+  left: 16px;
+}
+
+.form-text-area {
+  width: 360px;
+  height: 120px;
+  resize: none;
+  outline: transparent;
+  padding: 8px 16px;
+  margin-top: 4px;
+  border-radius: 4px;
+  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+}
+
+.form-button {
+  margin: 0 auto;
+  width: 169px;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.64px;
+  border-radius: 4px;
+  color: var(--brand-color5);
+  background: var(--brand-color2);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .filter-buttons {
@@ -282,7 +364,9 @@ header {
 }
 
 .filter-buttons button:focus,
-.filter-buttons button:hover {
+.filter-buttons button:hover,
+.form-button:focus,
+.form-button:hover {
   color: var(--brand-color5);
   background-color: var(--brand-color6);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
