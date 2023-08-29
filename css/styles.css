@@ -279,7 +279,8 @@ header {
 }
 
 .order-service-form input {
-  border: none;
+  border-radius: 4px;
+  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   width: 360px;
   border-radius: 4px;
   outline: transparent;
@@ -291,13 +292,13 @@ header {
   row-gap: 8px;
   width: 360px;
   height: 40px;
-  border: solid 1px;
   border-radius: 4px;
   border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   margin-top: 4px;
+  border: none;
 }
 
-.form-input-wrapper:focus,
+.order-service-form input:focus,
 .form-text-area:focus {
   fill: var(--brand-color2);
   border-color: var(--brand-color2);
